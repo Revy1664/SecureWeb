@@ -1,0 +1,145 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	font-family: "Ubuntu", sans-serif;
+	width: 100%;
+	background-color: #FFFFF0;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+/* Header */
+
+.header {
+	padding: 10px;
+	text-align: center;
+}
+
+.header h1 {
+	color: #1f2a44;
+	font-size: 42px;
+}
+
+.header ul {
+	margin-top: 10px;
+	padding: 10px;
+	border-top: 1px solid black;
+}
+
+.header ul li {
+	display: inline;
+	margin-left: 50px;
+}
+
+.header ul li a {
+	color: #1f2a44;
+	font-size: 20px;
+}
+
+/* Content */
+
+.content {
+	margin-bottom: 100px;
+	min-height: 100%;
+}
+
+.banner .container {
+	padding: 30px;
+	color: #fffff0;
+	background: rgba(152, 217, 74);
+	border-radius: 10px;
+	margin: 40px auto;
+}
+
+.banner .container p {
+	margin-top: 15px;
+	font-size: 18px;
+}
+
+.about-page-content {
+	padding: 10px;
+}
+
+.about-page-content p {
+	margin-top: 20px;
+	font-size: 18px;
+}
+
+.contact {
+	padding: 10px;
+}
+
+.contact p {
+	margin-top: 20px;
+	font-size: 18px;
+}
+
+.contact form {
+	margin-top: 30px;
+}
+
+.contact form input {
+	font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact form textarea {
+	font-size: 16px;
+	margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+	width: 300px;
+	height: 100px;
+	resize: none;
+}
+
+.contact form button {
+	padding: 5px;
+	margin-top: 10px;
+	width: 70px;
+	font-size: 16px;
+	border: none;
+	background: #98D94A;
+	border-radius: 10px;
+	color: #fffff0;
+}
+
+/* Footer */
+.footer {
+	background: #98D94A;
+	padding: 20px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.footer ul {
+	display: flex;
+	justify-content: center;
+}
+
+.footer ul li {
+	margin-left: 60px;
+}
+
+.footer ul li a {
+	color: #fffff0;
+	font-size: 20px;
+}

@@ -4,13 +4,43 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{% block title %} {% endblock %}</title>
-	<link rel="stylesheet" href="static/style.css">
+	<!-- styles -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
 	
-	{% block content %}
+	<header class="header">
+		<div class="container">
+			<h1>HackDev</h1>
+			<ul>
+				<li><a href="{{ url_for('index_view') }}">Home</a></li>
+				<li><a href="{{ url_for('about_view') }}">About</a></li>
+				<li><a href="{{ url_for('contact_view') }}">Contact</a></li>
+			</ul>
+		</div>
+	</header>
 
-	{% endblock %}
+	<div class="content">
+		{% block content %}
+
+		{% endblock %}
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<ul>
+				<li><a href="#">New-York, 2001</a></li>
+				<li><a href="#">hackDev23@gmai.com</a></li>
+				<li><a href="#">Jacob Rud</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	
 
 </body>
 </html>
